@@ -83,7 +83,7 @@ $Shortcut.Save()
 
 
 $URL = "https://raw.githubusercontent.com/atsjason/taskbarUSB/main/LayoutModification.xml"
-$XML = Join-Path -Path $Location -ChildPath "\LayoutModification.xml"
+$XML = Join-Path -Path $Path -ChildPath "\LayoutModification.xml"
 (New-Object System.Net.WebClient).DownloadFile("${URL}", "${XML}")
 
 
