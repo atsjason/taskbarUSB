@@ -80,3 +80,10 @@ $Shortcut.arguments = "--app=https://somatusoffice365.sharepoint.com/sites/NewHi
 $shortcut.IconLocation = "https://www.microsoft.com/favicon.ico"
 $Shortcut.Save()
 }
+
+
+$URL = "https://raw.githubusercontent.com/atsjason/taskbarUSB/main/LayoutModification.xml"
+$XML = Join-Path -Path $Location -ChildPath "\LayoutModification.xml"
+(New-Object System.Net.WebClient).DownloadFile("${URL}", "${XML}")
+
+
